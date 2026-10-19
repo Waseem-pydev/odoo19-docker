@@ -1,0 +1,4 @@
+<odoo>
+    <menuitem id="student_menu_root" name="Student Management" sequence="-100"/>
+    <menuitem id="student_submenu" name="Students" sequence="0" parent="student_menu_root" action="student_action"/>
+</odoo>

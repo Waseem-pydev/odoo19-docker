@@ -1,0 +1,50 @@
+<odoo>
+    <!--List view of tudent.student(start)-->
+    <record id="student_view_tree" model="ir.ui.view">
+        <field name="name">Student student tree view</field>
+        <field name="model">student.student</field>
+        <field name="arch" type="xml">
+            <list>
+               <field name="student_id"/>
+                <field name="name"/>
+                <field name="gender"/>
+                <field name="dob"/>
+                <field name="image"/>
+          
+            </list>
+        </field>
+    </record>
+    <!--List view of tudent.student(end)-->
+
+    <!--Form view of tudent.student(start)-->
+    <record id="student_view_form" model="ir.ui.view">
+        <field name="name">Student student formview</field>
+        <field name="model">student.student</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <field name="student_id"/>
+                    <field name="name"/>
+                    <field name="email"/>
+                    <field name="address"/>
+                    <field name="dob"/>
+                    <field name="age"/>
+                    <field name="course"/>
+                    <field name="fees"/>
+                    <field name="admission_date"/>
+                    <field name="gender"/>
+                    <field name="image"/>
+                </group>
+            </form>
+        </field>
+    </record>
+    <!--Form view of tudent.student(end)-->
+
+    <!--Action of student.student model (start)-->
+        <record id="student_action" model="ir.actions.act_window">
+        <field name="name">Student</field>
+        <field name="res_model">student.student</field>
+        <field name="view_mode">list,form</field>
+    <!--Action of student.student model (end)-->
+    </record>
+</odoo>
